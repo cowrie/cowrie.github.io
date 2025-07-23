@@ -65,7 +65,7 @@
     <text x="550" y="240" fill="#ef4444" font-family="monospace" font-size="14" font-weight="bold">🚨 Active Alerts</text>
     
     <rect x="550" y="250" width="200" height="25" fill="#7f1d1d" rx="3"/>
-    <text x="555" y="265" fill="#fca5a5" font-family="monospace" font-size="10">HIGH: Botnet C&C detected</text>
+    <text x="555" y="265" fill="#fca5a5" font-family="monospace" font-size="10">HIGH: Botnet C&amp;C detected</text>
     
     <rect x="550" y="280" width="200" height="25" fill="#92400e" rx="3"/>
     <text x="555" y="295" fill="#fde68a" font-family="monospace" font-size="10">MED: Brute force from CN</text>
