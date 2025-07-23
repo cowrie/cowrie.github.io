@@ -1,0 +1,96 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc"/>
+  
+  <!-- Central Cowrie honeypot -->
+  <g transform="translate(200, 150)">
+    <circle cx="0" cy="0" r="30" fill="#4f46e5" stroke="#3730a3" stroke-width="3"/>
+    <text x="-15" y="-5" fill="white" font-family="sans-serif" font-size="12" font-weight="bold">Cowrie</text>
+    <text x="-18" y="8" fill="white" font-family="sans-serif" font-size="10">Honeypot</text>
+  </g>
+  
+  <!-- Security Tools Integration -->
+  
+  <!-- SIEM Tools (Top) -->
+  <g transform="translate(100, 50)">
+    <rect x="-30" y="-15" width="60" height="30" fill="#ef4444" rx="5"/>
+    <text x="-20" y="-2" fill="white" font-family="sans-serif" font-size="10" font-weight="bold">Splunk</text>
+    <text x="-15" y="10" fill="white" font-family="sans-serif" font-size="8">SIEM</text>
+    <line x1="30" y1="15" x2="70" y2="85" stroke="#374151" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(300, 50)">
+    <rect x="-35" y="-15" width="70" height="30" fill="#0ea5e9" rx="5"/>
+    <text x="-25" y="-2" fill="white" font-family="sans-serif" font-size="10" font-weight="bold">Sentinel</text>
+    <text x="-15" y="10" fill="white" font-family="sans-serif" font-size="8">SIEM</text>
+    <line x1="-35" y1="15" x2="-70" y2="85" stroke="#374151" stroke-width="2"/>
+  </g>
+  
+  <!-- Analytics (Left) -->
+  <g transform="translate(50, 150)">
+    <rect x="-25" y="-15" width="50" height="30" fill="#10b981" rx="5"/>
+    <text x="-20" y="-2" fill="white" font-family="sans-serif" font-size="10" font-weight="bold">ELK Stack</text>
+    <text x="-15" y="10" fill="white" font-family="sans-serif" font-size="8">Analytics</text>
+    <line x1="25" y1="0" x2="140" y2="0" stroke="#374151" stroke-width="2"/>
+  </g>
+  
+  <!-- Threat Intel (Right) -->
+  <g transform="translate(350, 150)">
+    <rect x="-30" y="-15" width="60" height="30" fill="#8b5cf6" rx="5"/>
+    <text x="-25" y="-2" fill="white" font-family="sans-serif" font-size="9" font-weight="bold">ThreatIntel</text>
+    <text x="-20" y="10" fill="white" font-family="sans-serif" font-size="8">Feeds</text>
+    <line x1="-30" y1="0" x2="-120" y2="0" stroke="#374151" stroke-width="2"/>
+  </g>
+  
+  <!-- Incident Response (Bottom Left) -->
+  <g transform="translate(100, 250)">
+    <rect x="-25" y="-15" width="50" height="30" fill="#f59e0b" rx="5"/>
+    <text x="-20" y="-2" fill="white" font-family="sans-serif" font-size="9" font-weight="bold">PagerDuty</text>
+    <text x="-15" y="10" fill="white" font-family="sans-serif" font-size="8">Alerting</text>
+    <line x1="25" y1="-15" x2="70" y2="-65" stroke="#374151" stroke-width="2"/>
+  </g>
+  
+  <!-- Security Orchestration (Bottom Right) -->
+  <g transform="translate(300, 250)">
+    <rect x="-25" y="-15" width="50" height="30" fill="#ec4899" rx="5"/>
+    <text x="-20" y="-2" fill="white" font-family="sans-serif" font-size="10" font-weight="bold">SOAR</text>
+    <text x="-18" y="10" fill="white" font-family="sans-serif" font-size="8">Platform</text>
+    <line x1="-25" y1="-15" x2="-70" y2="-65" stroke="#374151" stroke-width="2"/>
+  </g>
+  
+  <!-- Data flow indicators -->
+  <g opacity="0.7">
+    <!-- Attack data flows -->
+    <circle cx="170" cy="100" r="4" fill="#ef4444">
+      <animate attributeName="cy" values="100;130;100" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="230" cy="100" r="4" fill="#ef4444">
+      <animate attributeName="cy" values="100;130;100" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Response flows -->
+    <circle cx="125" cy="150" r="4" fill="#10b981">
+      <animate attributeName="cx" values="125;175;125" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="275" cy="150" r="4" fill="#8b5cf6">
+      <animate attributeName="cx" values="275;225;275" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Integration types -->
+  <text x="200" y="25" fill="#374151" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Security Ecosystem Integration</text>
+  
+  <!-- Data formats -->
+  <g transform="translate(200, 285)">
+    <text x="0" y="0" fill="#6b7280" font-family="monospace" font-size="10" text-anchor="middle">JSON • CEF • Syslog • REST API</text>
+  </g>
+  
+  <!-- Protocol indicators -->
+  <g transform="translate(20, 20)">
+    <rect x="0" y="0" width="80" height="40" fill="#f3f4f6" stroke="#d1d5db" rx="5"/>
+    <text x="5" y="15" fill="#374151" font-family="sans-serif" font-size="10" font-weight="bold">Protocols:</text>
+    <text x="5" y="28" fill="#6b7280" font-family="sans-serif" font-size="9">TCP/UDP/HTTP</text>
+  </g>
+</svg>

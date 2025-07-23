@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f8fafc" rx="20"/>
+  
+  <!-- Shield outline -->
+  <path d="M100 20 L140 40 L140 80 Q140 120 100 160 Q60 120 60 80 L60 40 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="3"/>
+  
+  <!-- Inner shield -->
+  <path d="M100 35 L125 50 L125 80 Q125 110 100 140 Q75 110 75 80 L75 50 Z" fill="#0ea5e9"/>
+  
+  <!-- Warning symbol -->
+  <circle cx="100" cy="85" r="25" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <path d="M100 70 L100 95 M100 105 L100 110" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Radar sweeps -->
+  <g opacity="0.6">
+    <circle cx="100" cy="100" r="50" fill="none" stroke="#4f46e5" stroke-width="1" stroke-dasharray="5,5"/>
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#4f46e5" stroke-width="1" stroke-dasharray="10,10" opacity="0.5"/>
+  </g>
+  
+  <!-- Detection points -->
+  <circle cx="60" cy="60" r="3" fill="#ef4444"/>
+  <circle cx="140" cy="70" r="3" fill="#ef4444"/>
+  <circle cx="75" cy="140" r="3" fill="#f97316"/>
+  <circle cx="130" cy="135" r="3" fill="#ef4444"/>
+</svg>

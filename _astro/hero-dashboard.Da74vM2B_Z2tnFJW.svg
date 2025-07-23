@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dashboard Background -->
+  <rect width="800" height="600" fill="#1a1a2e" rx="8"/>
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="800" height="60" fill="#16213e" rx="8"/>
+  <text x="20" y="35" fill="#4f46e5" font-family="monospace" font-size="18" font-weight="bold">Cowrie Honeypot Dashboard</text>
+  <circle cx="750" cy="30" r="8" fill="#10b981"/>
+  <text x="680" y="35" fill="#10b981" font-family="monospace" font-size="12">ACTIVE</text>
+  
+  <!-- Main Content Grid -->
+  <g transform="translate(20, 80)">
+    <!-- Attack Timeline -->
+    <rect x="0" y="0" width="360" height="200" fill="#0f172a" stroke="#374151" stroke-width="1" rx="6"/>
+    <text x="10" y="20" fill="#e5e7eb" font-family="monospace" font-size="14" font-weight="bold">SSH Attack Timeline</text>
+    
+    <!-- Timeline bars -->
+    <rect x="20" y="40" width="60" height="8" fill="#ef4444" rx="2"/>
+    <rect x="20" y="60" width="120" height="8" fill="#f97316" rx="2"/>
+    <rect x="20" y="80" width="200" height="8" fill="#eab308" rx="2"/>
+    <rect x="20" y="100" width="80" height="8" fill="#22c55e" rx="2"/>
+    <rect x="20" y="120" width="160" height="8" fill="#3b82f6" rx="2"/>
+    
+    <!-- Time labels -->
+    <text x="20" y="150" fill="#9ca3af" font-family="monospace" font-size="10">09:00</text>
+    <text x="120" y="150" fill="#9ca3af" font-family="monospace" font-size="10">12:00</text>
+    <text x="220" y="150" fill="#9ca3af" font-family="monospace" font-size="10">15:00</text>
+    <text x="320" y="150" fill="#9ca3af" font-family="monospace" font-size="10">18:00</text>
+    
+    <!-- Threat Map -->
+    <rect x="400" y="0" width="360" height="200" fill="#0f172a" stroke="#374151" stroke-width="1" rx="6"/>
+    <text x="410" y="20" fill="#e5e7eb" font-family="monospace" font-size="14" font-weight="bold">Global Threat Map</text>
+    
+    <!-- World map dots -->
+    <circle cx="450" cy="80" r="6" fill="#ef4444" opacity="0.8"/>
+    <circle cx="500" cy="100" r="4" fill="#f97316" opacity="0.8"/>
+    <circle cx="600" cy="70" r="8" fill="#ef4444" opacity="0.8"/>
+    <circle cx="650" cy="120" r="5" fill="#eab308" opacity="0.8"/>
+    <circle cx="700" cy="90" r="3" fill="#22c55e" opacity="0.8"/>
+    
+    <!-- Attack Stats -->
+    <rect x="0" y="220" width="240" height="150" fill="#0f172a" stroke="#374151" stroke-width="1" rx="6"/>
+    <text x="10" y="240" fill="#e5e7eb" font-family="monospace" font-size="14" font-weight="bold">Attack Statistics</text>
+    
+    <text x="20" y="265" fill="#ef4444" font-family="monospace" font-size="12">● SSH Attempts: 2,847</text>
+    <text x="20" y="285" fill="#f97316" font-family="monospace" font-size="12">● Telnet Attempts: 1,234</text>
+    <text x="20" y="305" fill="#eab308" font-family="monospace" font-size="12">● Malware Samples: 56</text>
+    <text x="20" y="325" fill="#22c55e" font-family="monospace" font-size="12">● Unique IPs: 892</text>
+    <text x="20" y="345" fill="#3b82f6" font-family="monospace" font-size="12">● Countries: 47</text>
+    
+    <!-- Recent Commands -->
+    <rect x="260" y="220" width="260" height="150" fill="#0f172a" stroke="#374151" stroke-width="1" rx="6"/>
+    <text x="270" y="240" fill="#e5e7eb" font-family="monospace" font-size="14" font-weight="bold">Recent Commands</text>
+    
+    <text x="280" y="260" fill="#9ca3af" font-family="monospace" font-size="10">$ wget malware.sh</text>
+    <text x="280" y="275" fill="#9ca3af" font-family="monospace" font-size="10">$ chmod +x bot.py</text>
+    <text x="280" y="290" fill="#9ca3af" font-family="monospace" font-size="10">$ cat /etc/passwd</text>
+    <text x="280" y="305" fill="#9ca3af" font-family="monospace" font-size="10">$ netstat -tulpn</text>
+    <text x="280" y="320" fill="#9ca3af" font-family="monospace" font-size="10">$ curl -O exploit.tar.gz</text>
+    <text x="280" y="335" fill="#9ca3af" font-family="monospace" font-size="10">$ ./cryptominer</text>
+    <text x="280" y="350" fill="#9ca3af" font-family="monospace" font-size="10">$ rm -rf /tmp/*</text>
+    
+    <!-- Alert Panel -->
+    <rect x="540" y="220" width="220" height="150" fill="#0f172a" stroke="#ef4444" stroke-width="2" rx="6"/>
+    <text x="550" y="240" fill="#ef4444" font-family="monospace" font-size="14" font-weight="bold">🚨 Active Alerts</text>
+    
+    <rect x="550" y="250" width="200" height="25" fill="#7f1d1d" rx="3"/>
+    <text x="555" y="265" fill="#fca5a5" font-family="monospace" font-size="10">HIGH: Botnet C&C detected</text>
+    
+    <rect x="550" y="280" width="200" height="25" fill="#92400e" rx="3"/>
+    <text x="555" y="295" fill="#fde68a" font-family="monospace" font-size="10">MED: Brute force from CN</text>
+    
+    <rect x="550" y="310" width="200" height="25" fill="#365314" rx="3"/>
+    <text x="555" y="325" fill="#bef264" font-family="monospace" font-size="10">LOW: Port scan detected</text>
+  </g>
+  
+  <!-- Network connections visualization -->
+  <g transform="translate(20, 480)">
+    <text x="0" y="0" fill="#e5e7eb" font-family="monospace" font-size="12" font-weight="bold">Network Activity</text>
+    <!-- Connection lines -->
+    <line x1="50" y1="30" x2="200" y2="30" stroke="#4f46e5" stroke-width="2" opacity="0.6"/>
+    <line x1="50" y1="30" x2="150" y2="60" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+    <line x1="50" y1="30" x2="250" y2="50" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Nodes -->
+    <circle cx="50" cy="30" r="8" fill="#4f46e5"/>
+    <text x="30" y="55" fill="#9ca3af" font-family="monospace" font-size="8">Honeypot</text>
+    
+    <circle cx="200" cy="30" r="6" fill="#ef4444"/>
+    <text x="180" y="55" fill="#9ca3af" font-family="monospace" font-size="8">Attacker 1</text>
+    
+    <circle cx="150" cy="60" r="6" fill="#ef4444"/>
+    <text x="130" y="85" fill="#9ca3af" font-family="monospace" font-size="8">Attacker 2</text>
+    
+    <circle cx="250" cy="50" r="6" fill="#10b981"/>
+    <text x="230" y="75" fill="#9ca3af" font-family="monospace" font-size="8">SIEM</text>
+  </g>
+</svg>
