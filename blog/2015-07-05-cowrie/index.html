@@ -139,7 +139,7 @@ Get Started
     }
   });
 </script>  <div class="max-w-screen-xl mx-auto px-5">  <div class="mx-auto max-w-3xl text-center mt-14"> <span class="text-blue-400 uppercase tracking-wider text-sm font-medium"> Cowrie </span> <h1 class="text-3xl lg:text-4xl font-bold lg:tracking-tight mt-1 lg:leading-tight"> Cowrie Honeypot </h1> <div class="flex gap-2 mt-3 items-center justify-center text-sm flex-wrap md:flex-nowrap"> <span class="text-slate-400"> Michel Oosterhof </span> <span class="text-slate-400">•</span> <time class="text-slate-400" datetime="2015-07-05T00:00:00.000Z"> Sun Jul 05 2015 </time> <span class="text-slate-400 hidden md:block">•</span> <div class="w-full md:w-auto flex flex-wrap justify-center gap-3"> <span class="text-sm text-slate-500">#ssh</span><span class="text-sm text-slate-500">#cowrie</span><span class="text-sm text-slate-500">#honeypot</span> </div> </div> </div> <div class="mx-auto max-w-4xl"> <picture> <source srcset="/images/kippo-bg.jpg" type="image/avif"><source srcset="/images/kippo-bg.jpg" type="image/webp">  <img src="/images/kippo-bg.jpg" alt="Feature image" data-astro-transition-scope="astro-xmqcjxod-1" loading="lazy" decoding="async" fetchpriority="auto" width="1280" height="800" class="h-full w-full object-contain rounded-xl mt-6"> </picture> </div> <div class="mx-auto prose mt-6 max-w-3xl prose-headings:mb-2 prose-headings:mt-8"> <p>Since summer 2014 I’ve been working on extensions and contributions to the well known
-<a href="http://en.wikipedia.org/wiki/Kippo">Kippo honeypot</a> developed by
+<a href="https://en.wikipedia.org/wiki/Kippo">Kippo honeypot</a> developed by
 <a href="https://github.com/desaster">desaster</a>.</p>
 <p>I noticed some SSH attacks against my systems were not logged in full detail and I started to work on additional logging,
 from there I’ve added ‘ssh exec commands’ support, SFTP support, SCP support, direct-tcpip (proxying) support and many other features.</p>
@@ -155,7 +155,7 @@ Programmatically it is based on the Twisted Conch code, and uses a UNIX file sys
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>ssh user@host 'cat /etc/passwd'</span></span></code></pre>
 <p>Support for this has been merged into the original Kippo repository, so it’s probably already in your version. This includes logging and executing these commands.</p>
 <p>I’ve seen other uses as well, where malicious code is uploaded through stdin. Less common now, but I did see this last year:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>cat malware | ssh user@host 'cat>./malware;chmod u+x ./malware; ./malware; rm -f ./malware'. </span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>cat malware | ssh user@host 'cat>./malware;chmod u+x ./malware; ./malware; rm -f ./malware'.</span></span></code></pre>
 <p>So I added ‘stdin’ logging whenever standard-in data is encountered in combination with an exec command.</p>
 <h2 id="ssh-tunnelling-direct-tcpip-support">SSH tunnelling (direct-tcpip) support</h2>
 <p>I added logging initially for additional channels and saw I received some ‘direct-tcpip’ requests.
@@ -176,7 +176,7 @@ Cowrie now accept, logs and then denies public-key authentication. An easy way t
 <h2 id="ssh-protocol-updates">SSH Protocol Updates</h2>
 <p>I’ve enabled the diffie-hellman-group-exchange-sha1 algorithm. And updated the ciphers to the ones supported by OpenSSH.
 Als added ‘dss’ keys.</p>
-<p>Also I ported code from <a href="https://code.google.com/p/honssh/">honssh</a> to stop the <a href="http://morris.guru/detecting-kippo-ssh-honeypots/">Metasploit kippo detection</a> by Andrew Morris. The issue is more with Conch (the Twisted SSH implementation), but there’s a workaround in Cowrie now.</p>
+<p>Also I ported code from <a href="https://code.google.com/p/honssh/">honssh</a> to stop the <a href="https://morris.guru/detecting-kippo-ssh-honeypots/">Metasploit kippo detection</a> by Andrew Morris. The issue is more with Conch (the Twisted SSH implementation), but there’s a workaround in Cowrie now.</p>
 <p>It’s good to realize that Cowrie is a medium interaction honeypot, and there will always be ways to fingerprint the honeypot. Another easy way is to look just at the ciphers offered by the SSH server.</p>
 <h2 id="additional-commands">Additional commands</h2>
 <p>I added additional commmands:</p>
