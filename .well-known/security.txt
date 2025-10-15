@@ -1,6 +1,4 @@
-Contact: mailto:security@[DOMAIN]
 Contact: mailto:cowrie@cowrie.org
 Contact: https://www.cowrie.org/contact/
 Expires: 2026-11-14T23:59:00Z
 Hiring: https://www.cowrie.org/careers/
-Encryption: https://www.cowrie.org/security-team-pgp-key.txt
