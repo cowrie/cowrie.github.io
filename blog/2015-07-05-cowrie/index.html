@@ -41,8 +41,8 @@
         // Re-initialize on Astro page transitions
         document.addEventListener('astro:page-load', initializeAlert);
       })();
-    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.6Spq5I16.js"></script><style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*),[data-astro-transition-scope]{animation:none!important}}
-</style><link rel="stylesheet" href="/_astro/Layout.DLKEI9Sg.css"><style>[data-astro-transition-scope="astro-vsev7mas-1"] { view-transition-name: post-img-2015-07-05-cowrie; }@layer astro { ::view-transition-old(post-img-2015-07-05-cowrie) { 
+    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.aQfDf-Kh.js"></script><style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*),[data-astro-transition-scope]{animation:none!important}}
+</style><link rel="stylesheet" href="/_astro/Layout.CO2nbu4E.css"><style>[data-astro-transition-scope="astro-vsev7mas-1"] { view-transition-name: post-img-2015-07-05-cowrie; }@layer astro { ::view-transition-old(post-img-2015-07-05-cowrie) { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
@@ -153,7 +153,7 @@ Programmatically it is based on the Twisted Conch code, and uses a UNIX file sys
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>ssh user@host 'cat /etc/passwd'</span></span></code></pre>
 <p>Support for this has been merged into the original Kippo repository, so it’s probably already in your version. This includes logging and executing these commands.</p>
 <p>I’ve seen other uses as well, where malicious code is uploaded through stdin. Less common now, but I did see this last year:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>cat malware | ssh user@host 'cat>./malware;chmod u+x ./malware; ./malware; rm -f ./malware'.</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>cat malware | ssh user@host 'cat&gt;./malware;chmod u+x ./malware; ./malware; rm -f ./malware'.</span></span></code></pre>
 <p>So I added ‘stdin’ logging whenever standard-in data is encountered in combination with an exec command.</p>
 <h2 id="ssh-tunnelling-direct-tcpip-support">SSH tunnelling (direct-tcpip) support</h2>
 <p>I added logging initially for additional channels and saw I received some ‘direct-tcpip’ requests.
@@ -280,7 +280,7 @@ a drop-in replacement for the original Kippo, with a few small changes to the co
 <span class="line"><span>logfile = log/cowrie.json</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># Enables passing commands using ssh execCommand</span></span>
-<span class="line"><span># e.g. ssh root@localhost &#x3C;command></span></span>
+<span class="line"><span># e.g. ssh root@localhost &lt;command&gt;</span></span>
 <span class="line"><span>#</span></span>
 <span class="line"><span># (default: false)</span></span>
 <span class="line"><span>exec_enabled = true</span></span>
