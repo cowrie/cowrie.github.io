@@ -1,4 +1,8 @@
+# Content Signals (https://contentsignals.org/): all uses are permitted.
+# search = building a search index, ai-input = AI retrieval/grounding,
+# ai-train = AI model training.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 Sitemap: https://cowrie.org/sitemap-index.xml
