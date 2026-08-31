@@ -1,8 +1,7 @@
 # Our primary reporting channel:
 Contact: mailto:security@cowrie.org
-Contact: https://www.cowrie.org/contact/
+Contact: https://cowrie.org/contact/
 Expires: 2026-11-14T23:59:00Z
-Hiring: https://www.cowrie.org/careers/
 Preferred-Languages: en
 
 # Alternative channel for cowrie vulnerabilities:
