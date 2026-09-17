@@ -1,0 +1,35 @@
+# Cowrie
+
+> Cowrie is a free and open-source SSH and Telnet honeypot. It pretends to be a vulnerable server, logs brute-force logins, records every command attackers type, saves the malware they upload, and sends it all to analysis tools as JSON.
+
+Cowrie began in 2014 as a fork of the Kippo honeypot and is maintained on GitHub by a community of volunteer contributors. It is written in Python and released under the BSD license. cowrie.org is the community website of the open-source project; the source code and issue tracker live on GitHub and the reference documentation on docs.cowrie.org.
+
+## Project
+
+- [Homepage](https://cowrie.org/): what Cowrie does, with a recorded attacker session
+- [Features](https://cowrie.org/features): how Cowrie works and what it records, with example output
+- [Integrations](https://cowrie.org/integrations): output plugins for Elasticsearch, Splunk, Sentinel, MISP, hpfeeds, VirusTotal, Slack and more
+- [About](https://cowrie.org/about): project history and maintainers
+- [Contact](https://cowrie.org/contact): how to reach the project
+- [Privacy policy](https://cowrie.org/privacy)
+
+## Documentation and source
+
+- [Documentation](https://docs.cowrie.org/en/stable): reference documentation for installing, configuring and running Cowrie
+- [Installation guide](https://docs.cowrie.org/en/stable/INSTALL.html): step-by-step setup
+- [Output plugins](https://docs.cowrie.org/en/stable/OUTPUT.html): configuration for each output destination
+- [Source code](https://github.com/cowrie/cowrie): GitHub repository, issue tracker and pull requests
+- [Releases](https://github.com/cowrie/cowrie/releases): changelog and version history
+
+## Community
+
+- [Slack](https://cowrie.org/slack): join the Cowrie Slack workspace
+- [Discord](https://cowrie.org/discord): join the Cowrie Discord server
+- [Newsletter](https://cowrie.org/newsletter): occasional project updates by email
+
+## Blog
+
+- [Blog index](https://cowrie.org/blog)
+- [RSS feed](https://cowrie.org/rss.xml)
+- [GSOC: Designing SSH and Telnet Proxies (and dabbling with Qemu)](https://cowrie.org/blog/2019-gsoc/): New honeypot features including SFTP, Exec, Protocol Updates, JSON logging and much more!
+- [Cowrie Honeypot](https://cowrie.org/blog/2015-07-05-cowrie/): New honeypot features including SFTP, Exec, Protocol Updates, JSON logging and much more!
