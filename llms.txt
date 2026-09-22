@@ -19,7 +19,9 @@ Cowrie began in 2014 as a fork of the Kippo honeypot and is maintained on GitHub
 - [Installation guide](https://docs.cowrie.org/en/stable/INSTALL.html): step-by-step setup
 - [Output plugins](https://docs.cowrie.org/en/stable/OUTPUT.html): configuration for each output destination
 - [Source code](https://github.com/cowrie/cowrie): GitHub repository, issue tracker and pull requests
-- [Releases](https://github.com/cowrie/cowrie/releases): changelog and version history
+- [Changelog](https://cowrie.org/changelog): every release, grouped into breaking changes, features and fixes
+- [Changelog feed](https://cowrie.org/changelog.xml): RSS feed of Cowrie releases
+- [Releases](https://github.com/cowrie/cowrie/releases): version history on GitHub
 
 ## Community
 
