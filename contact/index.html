@@ -104,10 +104,11 @@
       return;
     }
     const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    const payload = JSON.stringify(Object.fromEntries(formData));
 
-    result.innerHTML = 'Sending...';
+    result.classList.remove('text-green-500', 'text-red-500');
+    result.style.display = '';
+    result.textContent = 'Sending...';
 
     fetch('https://formspree.io/cowrie@cowrie.org', {
       method: 'POST',
@@ -115,22 +116,17 @@
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
-      body: json,
+      body: payload,
     })
       .then(async (response) => {
-        const json = await response.json();
-        if (response.status == 200) {
-          result.classList.add('text-green-500');
-          result.innerHTML = json.message;
-        } else {
-          console.log(response);
-          result.classList.add('text-red-500');
-          result.innerHTML = json.message;
-        }
+        const reply = await response.json();
+        result.classList.add(response.status === 200 ? 'text-green-500' : 'text-red-500');
+        result.textContent = reply.message;
       })
       .catch((error) => {
-        console.log(error);
-        result.innerHTML = 'Something went wrong!';
+        console.error(error);
+        result.classList.add('text-red-500');
+        result.textContent = 'Something went wrong!';
       })
       .then(function () {
         form.reset();
